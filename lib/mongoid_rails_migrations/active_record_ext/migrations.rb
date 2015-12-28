@@ -182,6 +182,9 @@ module Mongoid #:nodoc
   end
 
   class Migrator#:nodoc:
+    @@migrations_path = 'db/migrate'
+    cattr_accessor :migrations_path
+
     class << self
       def migrate(migrations_path, target_version = nil)
         case
@@ -209,10 +212,6 @@ module Mongoid #:nodoc
 
       def run(direction, migrations_path, target_version)
         self.new(direction, migrations_path, target_version).run
-      end
-
-      def migrations_path
-        'db/migrate'
       end
 
       # def schema_migrations_table_name
