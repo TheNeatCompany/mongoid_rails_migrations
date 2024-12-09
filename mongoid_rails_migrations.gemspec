@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.description = 'Migrations for the migrator.'
 
-  s.required_ruby_version     = '>= 1.8.6'
-  s.required_rubygems_version = '>= 1.3.6'
+  s.required_ruby_version     = '~> 3.3.2'
+  s.required_rubygems_version = '~> 3.5.9'
 
   s.author            = 'Alan Da Costa'
   s.email             = 'alandacosta@gmail.com'
@@ -21,12 +21,12 @@ Gem::Specification.new do |s|
   s.test_files    = Dir['test/**/*']
   s.has_rdoc      = false
 
-  rails_version = '>= 4.2.0'
+  rails_version = '~> 7.1.3.3'
 
-  s.add_runtime_dependency('bundler', '>= 1.0.0')
-  s.add_runtime_dependency('mongoid', '>= 4.0.0')
+  s.add_runtime_dependency('bundler', '~> 2.5.15')
+  s.add_runtime_dependency('mongoid', '~> 9.0')
   s.add_runtime_dependency('rails',  rails_version)
   s.add_runtime_dependency('railties',  rails_version)
   s.add_runtime_dependency('activesupport',  rails_version)
-  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rake', '~> 13.2.1'
 end
