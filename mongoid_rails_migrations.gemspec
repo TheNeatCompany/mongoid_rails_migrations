@@ -21,9 +21,9 @@ Gem::Specification.new do |s|
   s.test_files    = Dir['test/**/*']
   s.has_rdoc      = false
 
-  rails_version = '~> 7.1.3.3'
+  rails_version = '~> 7.1.4'
 
-  s.add_runtime_dependency('bundler', '~> 2.5.15')
+  s.add_runtime_dependency('bundler', '~> 2.6.6')
   s.add_runtime_dependency('mongoid', '~> 9.0')
   s.add_runtime_dependency('rails',  rails_version)
   s.add_runtime_dependency('railties',  rails_version)
